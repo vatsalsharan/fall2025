@@ -6,600 +6,255 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+    
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link href="css/starter-template.css" rel="stylesheet">
-
-    <title>Vatsal Sharan</title>
-
+        
+    <link href="css/main.css" rel="stylesheet">
+    
+        <title>CS699: Theory of ML</title>
   </head>
 
-  <body>
-    
-    <div class="container">
+<body>
+<div class="container">
 
-    	<div class="row">
+            <div class="row">
             <div class="col-lg-12">
-                <h1 class="page-header">Vatsal Sharan
+                <h1 class="page-header" style="color:#B03A2E;">CSCI 699: Machine Learning Theory
                 </h1>
             </div>
         </div>
 
-      <div class="row">
-        <div class="col-md-2">
-		<div class="photo">
-	  		<img id="picture" src="docs/vatsal.jpg" style="width:240px;height:280px;" class="photo_pic"/>
-		</div>      
-		</div>
-        <div class="col-md-5 col-md-offset-1">
-          <br>
-		  <font size="3">
-		  <p>Assistant Professor,<br>
-		  Thomas Lord Department of Computer Science,<br>
-          University of Southern California <br>
-		  </p>
-		  <p>
-          Email: vsharan at usc dot edu
-		  </p>
-          <p>
-          Office: GCS 402P
-          </p>
-		  </font>
-		</div>
-      </div>
-      <div class="voffset1"></div>
-      <div class="row">
-        <div class="span12">
-		<section id="about">
+<p>
 
-	    <h3>About</h3>
+<h3 style="color:#1F618D;">Basic Information</h3>
 
-			<p>
-            
-            
-            I'm an assistant professor of computer science at USC. I am a part of the <a href="https://viterbi-web.usc.edu/~cstheory/">Theory Group</a>, <a href="https://mascle.usc.edu/">Machine Learning Center</a> and the <a href="https://live-usc-cais.pantheonsite.io/">Center for AI in Society</a> at USC.
- Previously, I was a postdoc at MIT hosted by <a href="https://people.csail.mit.edu/moitra/">Ankur Moitra</a>. I obtained my Ph.D. from Stanford advised by <a href="http://theory.stanford.edu/~valiant/">Greg Valiant</a>. <br><br>
-            
-            <!--I work on the foundations of machine learning, and my interests mostly lie in the intersection of machine learning, theoretical computer science and statistics. My research aims to understand fundamental limits for solving learning and estimation tasks given computational and information theoretic constraints, and to use this understanding to develop practical algorithms which are efficient, fair and robust. If you're interested in learning more, here are some questions I've recently been working on:
-            -->
-            
-            I work on the foundations of machine learning, and my interests mostly lie in the intersection of machine learning, theoretical computer science and statistics. The goal of my research is to study and discover the underlying principles which govern learning, and to leverage this understanding to build practical machine learning systems which are more efficient, fair and robust. A large part of my work aims to inspect questions which arise from modern applications and challenges of machine learning. If you're interested in learning more, some of my representative work is highlighted below.
-            
-            
-            <!--If you're interested in learning more, here are some questions I've recently been working on:
-            
-            <ul>
-                <li>What is the role of computational and statistical constraints in learning and optimization? Are there inherent trade-offs between the amount of memory required for learning or optimization, and the amount of data or computation required? How do we solve learning tasks  with limited data, such as by designing optimal data augmentation and regularization techniques?
-                <li>What are appropriate notions of fairness in various domains, and how do we train models which respect these notions? Similarly, how do we ensure trained models are robust, such as when evaluated on data distributions which differ from the original training distribution?
-                <li>How can we understand deep neural networks and foundation models in the context of some of the above considerations?
-            </ul>
-            -->
-            
-            <br><br>
-            
-            
-             My research is supported by the NSF, Amazon Research and Google Research. This support is very gratefully acknowledged.<br><br>
+<ul>
+    <li> <b> Lecture time: </b> Monday 2:00 pm to 5:20 pm
+    <li> <b> Lecture place: </b> VPD 106
+        <li> <b> Instructor: </b> Vatsal Sharan (vsharan). Office hours on Monday from 11am-noon in SAL 220.
+            <li> <b>TAs: </b> Bhavya Vasudeva (bvasudev). Office hours on Wednesday from 10:30am-noon in SAL 322.
+            <li> <b>CP & Grader: </b>
+                Sai Anuroop Kesanapalli (kesanapa)
+                    <li> <b> Communication: </b> All inquiries which do not pertain to a specific member of the course staff should be sent via ed Discussion (see below). USC email-ids of all staff members are in parantheses above.
+            <li> <b> ed Discussion: </b> We will be using <a href="https://edstem.org/">ed</a> for all course communications (regarding homework, project, course scheduling, etc). Please feel free to ask/answer any questions about the class on ed. You can post privately on ed to contact the course staff for any reason. Please signup  <a href="https://edstem.org/us/join/ZtA4Qe">here</a>, and make sure you receive emails from Ed about announcements.
 
-        
-            
-            <!-- <div style="font-size:15px;font-weight:bold">I'm looking to take Ph.D. students for Fall 2022. If interested, please apply to the CS Ph.D. program at USC and mention my name in your application. I especially encourage members of underrepresented groups in computer science to apply. USC offers some <a href="https://gradadm.usc.edu/lightboxes/us-students-fee-waivers/">fee waivers </a> for eligible applicants.
-
-
-            
-            <br></div>-->
-            
-            I'm also a part of the <a href="https://let-all.com/">Learning Theory Alliance (LeT-All)</a>, a community building and mentorship initiative for the learning theory community. <br><br>
-
-            Here is my <a href="docs/Vatsal-Resume.pdf">CV</a>, which has a more complete list of activities.
-		</section>
-
-      
-
-
-	  <section id="papers">
-	    <h3>Some Representative Publications | <a href="https://vatsalsharan.github.io/pubs.html"><b>All Publications</b></a> </h3>
-            
-            <div style="height: 12px;"></div>
-            
-            <h4><em>Using algorithms to understand Transformers, and using Transformers to understand algorithms</em></h4>
-            
-            <div style="height: 8px;"></div>
-           
-     Theory can provide a bird's eye view of the landscape of information, computation and how they interact for learning problems. Can we use some of this computational and information theoretic understanding to understand Transformers? On the flip side, can we use Transformers to explore this landscape, and understand and discover algorithms and data structures?
-     
-     <div style="height: 8px;"></div>
-     
-     Here is a <a href="https://www.youtube.com/watch?v=qHWBk5ewYwI"><b>talk</b></a> which covers some of this work (<a href="docs/vatsal_simons.pdf"><b>slides</b></a>).
-
-            <br>
-            
-            <ul>
-            
-            <li><p> <div style="font-size:15px;font-weight:bold;">
-                Transformers Learn to Achieve Second-Order Convergence Rates for In-Context Linear Regression
-              </div>
-                <div style="margin-left: 15px;">
-                Deqing Fu, Tian-Qi Chen, Robin Jia, Vatsal Sharan
-            <br>
-            <i>Neurips, 2024</i><br>
-            <i><b> SoCal NLP Symposium 2023 Best Paper Award </b></i><br>
-            <a href="https://arxiv.org/abs/2310.17086"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2310.17086.pdf"><b>pdf</b></a>
-                </div>
-            </p></li>
-            
-            <li><p><div style="font-size:15px;font-weight:bold;">
-                 Pre-trained Large Language Models Use Fourier Features to Compute Addition
-            </div>
-                <div style="margin-left: 15px;">
-                Tianyi Zhou, Deqing Fu, Vatsal Sharan, Robin Jia
-
-            <br>
-            <i>Neurips, 2024</i><br>
-            <a href="https://arxiv.org/abs/2406.03445"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2406.03445"><b>pdf</b></a>
-                </div>
-            </p></li>
-            
-            <li><p><div style="font-size:15px;font-weight:bold;">
-                Transformers Learn Low Sensitivity Functions: Investigations and Implications
-            </div>
-                <div style="margin-left: 15px;">
-                Bhavya Vasudeva, Deqing Fu, Tianyi Zhou, Elliott Kau, Youqi Huang, Vatsal Sharan
-            <br>
-            <i>ICLR, 2025</i><br>
-            <a href="https://arxiv.org/abs/2403.06925"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2403.06925"><b>pdf</b></a>
-                </div>
-            </p></li>
-            
-            <li><p><div style="font-size:15px;font-weight:bold;">
-                Discovering Data Structures: Nearest Neighbor Search and Beyond
-            </div>
-                <div style="margin-left: 15px;">
-                    Omar Salemohamed, Laurent Charlin, Shivam Garg, Vatsal Sharan, Gregory Valiant
-            <br>
-            <i>arXiv, 2024</i><br>
-            <a href="https://arxiv.org/abs/2411.03253"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2411.03253"><b>pdf</b></a>
-                </div>
-            </p></li>
-            
-            
+                <li> <b> Gradescope: </b> We will use <a href="https://gradescope.com/">Gradescope </a> for assignment and final project submission.
     </ul>
-            
-            <a data-toggle="collapse" href="#collapseTf"><b>Some more work along these lines</b></a>
-            
-            <div class="collapse space justify" id="collapseTf">
-                
-                <ul>
-                    
-                    <li><p><div style="font-size:15px;font-weight:bold;">
-                         Mitigating Simplicity Bias in Deep Learning for Improved OOD Generalization and Robustness
-                    </div>
-                        <div style="margin-left: 15px;">
-                        Bhavya Vasudeva, Kameron Shahabi, Vatsal Sharan
-                    <br>
-                    <i>TMLR, 2024</i><br>
-                    <a href="https://arxiv.org/abs/2310.06161"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2310.06161.pdf"><b>pdf</b></a>
-                        </div>
-                    </p></li>
-                   
+        
 
-                    <li><p><div style="font-size:15px;font-weight:bold">One Network Fits All? Modular versus Monolithic Task Formulations in Neural Networks
-                        Learning</div>
-                        <div style="margin-left: 15px;">
-                        Atish Agarwala, Abhimanyu Das, Brendan Juba, Rina Panigrahy, Vatsal Sharan, Xin Wang, Qiuyi Zhang<br>
-                        <i>ICLR, 2021</i><br>
-                        <a data-toggle="collapse" href="#collapseExample_deep"><b>abstract</b></a></b></a> | <a href="https://arxiv.org/abs/2103.15261"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2103.15261.pdf"><b>pdf</b></a> | <a href="https://iclr.cc/virtual/2021/poster/3253"><b>video</b></a>
-                        </div>
-                        </p></li>
-                    
-                    </ul>
-                
-                
-            </div>
-            
-        
-            
-            <div style="height: 12px;"></div>
-            
-            <h4><em>A multi-group perspective to go beyond loss minimization in ML</em></h4>
-            
+<h3 style="color:#1F618D;">Course Description and Objectives</h3>
 
-            
-            <div style="height: 8px;"></div>
-            
-            Minimizing some loss function on average across all datapoints is the dominant paradigm in ML, but applications of ML in societal systems often involve more complex considerations. Different individuals participating in the system may have their own loss functions, it may not be possible to make decisions for these individuals in isolation, and we may care about the model’s behavior on various groups of individuals and not just on average across all of them. Some of my work here uses a multigroup perspective --- which examines the model's predictions on a large number of groups within the population --- to provide solutions to some of the above problems.
-            <div style="height: 8px;"></div>
-            
-            Here is a <a href="https://www.birs.ca/events/2024/5-day-workshops/24w5308/videos/watch/202410221336-Sharan.html"><b>talk</b></a> which covers some of this work (<a href="docs/vatsal_banff.pdf"><b>slides</b></a>).
-            <br>
-        
-        <ul>
+<p> This course focuses on the theoretical foundation of machine learning. The focus will be on understanding fundamental questions regarding both computational and statistical aspects of learning, with an overarching goal to answer the core question: what is the complexity of learning, in terms of its computational and statistical requirements? The course will also cover several modern aspects of the theory of maching learning---including memory complexity of learning, deep learning theory, robustness, and fairness.</p>
 
-        
-        <li><p><div style="font-size:15px;font-weight:bold;">
-           When is Multicalibration Post-Processing Necessary?
-        </div>
-            <div style="margin-left: 15px;">
-            Dutch Hansen, Siddartha Devic, Preetum Nakkiran, Vatsal Sharan
-        <br>
-        <i>Neurips, 2024</i><br>
-        <a href="https://arxiv.org/abs/2406.06487"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2406.06487"><b>pdf</b></a>
-            </div>
-        </p></li>
-        
-        <li><p><div style="font-size:15px;font-weight:bold;">
-            Stability and Multigroup Fairness in Ranking with Uncertain Predictions
-        </div>
-            <div style="margin-left: 15px;">
-            Siddartha Devic, Aleksandra Korolova, David Kempe, Vatsal Sharan
-        <br>
-        <i>ICML, 2024</i><br>
-        <i>Non-archival at FORC, 2024</i><br>
-        <a href="https://arxiv.org/abs/2402.09326"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2402.09326"><b>pdf</b></a> | <a href="https://www.youtube.com/watch?v=qCFDnBHfGtk"><b>video</b></a>
-            </div>
-        </p></li>
-        
-        <li><p><div style="font-size:15px;font-weight:bold">Omnipredictors
-        </div>
-            <div style="margin-left: 15px;">
-        Parikshit Gopalan, Adam Tauman Kalai, Omer Reingold, Vatsal Sharan, Udi Wieder
-        <br>
-        <i>ITCS, 2022</i><br>
-        <a href="https://arxiv.org/pdf/2109.05389"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2109.05389.pdf"><b>pdf</b></a>
-            </div>
-        </p></li>
-        
-        </ul>
-        
-        <a data-toggle="collapse" href="#collapseFair"><b>Some more work along these lines</b></a>
-        
-        <div class="collapse space justify" id="collapseFair">
-            
-            <ul>
-                
-                <li><p><div style="font-size:15px;font-weight:bold;">
-                     Optimal Multiclass U-Calibration Error and Beyond
-                </div>
-                    <div style="margin-left: 15px;">
-                    Haipeng Luo, Spandan Senapati, Vatsal Sharan
+<p> The hope is that through this course you will learn to think about machine learning in a more rigorous and principled way and have the skills to design provable and practical machine learning algorithms, which also work in the face of various computational and statistical constraints and meet modern desiderata. The course will equip you with the tools required to undertake research in theoretical machine learning, and will shed light on various interesting research frontiers.</p>
 
-                <br>
-                <i>Neurips, 2024</i><br>
-                <a href="https://arxiv.org/abs/2405.19374"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2405.19374"><b>pdf</b></a>
-                    </div>
-                </p></li>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">Fairness in Matching under Uncertainty
-                </div>
-                    <div style="margin-left: 15px;">
-                    Siddartha Devic, David Kempe, Vatsal Sharan, Aleksandra Korolova
-                <br>
-                <i>ICML, 2023</i><br>
-                <i>Non-archival at EAAMO, 2023</i><br>
-                <a href="https://arxiv.org/abs/2302.03810"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2302.03810.pdf"><b>pdf</b></a>
-                    </div></p></li>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">KL Divergence Estimation with Multi-group Attribution
-                </div>
-                    <div style="margin-left: 15px;">
-                    Parikshit Gopalan, Nina Narodytska, Omer Reingold, Vatsal Sharan, Udi Wieder
-                <br>
-                <i>arXiv, 2022</i><br>
-                <a href="https://arxiv.org/abs/2202.13576"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2202.13576.pdf"><b>pdf</b></a>
-                    </div>
-                </p></li>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">Multicalibrated Partitions for Importance Weights
-                </div>
-                    <div style="margin-left: 15px;">
-                Parikshit Gopalan, Omer Reingold, Vatsal Sharan, Udi Wieder
-                <br>
-                <i>ALT, 2022</i><br>
-                <a href="https://arxiv.org/abs/2103.05853"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2103.05853.pdf"><b>pdf</b></a>
-                    </div>
-                </p></li>
-                
-                
-                </ul>
-            
-        </div>
-        
-        <div style="height: 12px;"></div>
-        
-        
-        <h4>
-            <em>Memory as a lens to understand efficient learning and optimization</em>
-          </h4>
-        
-        <div style="height: 8px;"></div>
-        
-        Classical learning theory  mainly focuses on the number of operations performed by the algorithm as the proxy for the algorithm’s running time. However, since growth in the available processing power has outpaced the growth in the available memory by many orders of magnitude, memory rather than compute has become the primary bottleneck in many applications. Despite this, and even though memory has traditionally been one of the most fundamental computational resources in theoretical computer science, very little is known about the role of memory in solving learning tasks. My work investigates the role of memory in learning, and if memory could be a useful discerning factor to provide a clear separation between 'efficient' and 'expensive' techniques.
-        <div style="height: 8px;"></div>
-        
-        Here is a <a href="https://www.youtube.com/watch?v=--vC_MXcbFA"><b>talk</b></a> which covers some of this work (<a href="docs/vatsal_ipam.pdf"><b>slides</b></a>).
-        
-        <ul>
-            
-            <li><p><div style="font-size:15px;font-weight:bold">Efficient Convex Optimization Requires Superlinear Memory
-            </div>
-                <div style="margin-left: 15px;">
-            Annie Marsden, Vatsal Sharan, Aaron Sidford, Gregory Valiant
-            <br>
-            <i>COLT, 2022</i><br>
-            <i><b> Best Paper Award </b> </i><br>
-            <i>Invited to IJCAI 2023 Sister Conference Notable Paper Track</i><br>
-            <i>JACM, 2024</i><br>
-            <a href="https://arxiv.org/abs/2203.15260"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2203.15260.pdf"><b>pdf</b></a>
-                </div>
-            </p></li>
-            
-            <li><p><div style="font-size:15px;font-weight:bold">Big-Step-Little-Step: Efficient Gradient Methods for Objectives with Multiple Scales
-            </div>
-                <div style="margin-left: 15px;">
-            Jonathan Kelner, Annie Marsden, Vatsal Sharan, Aaron Sidford, Gregory Valiant, Honglin Yuan
-            <br>
-            <i>COLT, 2022</i><br>
-            <a href="https://arxiv.org/abs/2111.03137"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2111.03137.pdf"><b>pdf</b></a>
-                </div>
-            </p></li>
-            
-            <li><p><div style="font-size:15px;font-weight:bold">Memory-Sample Tradeoffs for Linear Regression with Small Error</div>
-                <div style="margin-left: 15px;">
-                    Vatsal Sharan, Aaron Sidford, Gregory Valiant<br>
-                <i>STOC, 2019</i><br>
-                <a data-toggle="collapse" href="#collapseExample4"><b>abstract</b></a> | <a href="https://arxiv.org/pdf/1904.08544.pdf"><b>pdf</b></a> | <a href="https://arxiv.org/abs/1904.08544"><b>arXiv</b></a>
-                </div>
-                </p></li>
-            
-            <div class="collapse space justify" id="collapseExample4">
-                What is the role of memory in continuous optimization and learning? Are there inherent trade-offs between the available memory and the data requirement? Is it possible to achieve the sample complexity of second-order optimization methods with significantly less memory? We raise these questions, and show the first nontrivial lower bounds for linear regression with super-linear memory: we show that there is a gap between the sample complexity of algorithms with quadratic memory and that of any algorithm with sub-quadratic memory. <br><br>
-            </div>
-            
-            
-            </ul>
-        
-        <a data-toggle="collapse" href="#collapseMemory"><b>Some more work along these lines</b></a>
-        
-        <div class="collapse space justify" id="collapseMemory">
-            
-            <ul>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">NeuroSketch: A Neural Network Method for Fast and Approximate Evaluation of Range Aggregate Queries
-                </div>
-                    <div style="margin-left: 15px;">
-                    Sepanta Zeighami, Vatsal Sharan, Cyrus Shahabi
-                <br>
-                <i>SIGMOD, 2023</i><br>
-                <a href="https://arxiv.org/abs/2211.10832"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2211.10832.pdf"><b>pdf</b></a>
-                    </div>
-                </p></li>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">Compressed Factorization: Fast and Accurate Low-Rank Factorization of Compressively-Sensed Data</div>
-                    <div style="margin-left: 15px;">
-                        Vatsal Sharan, Kai Sheng Tai, Peter Bailis, Gregory Valiant</i><br>
-                    <i>ICML, 2019 </i><br>
-                    <a data-toggle="collapse" href="#collapseExample3"><b>abstract</b></a> | <a href="https://arxiv.org/pdf/1706.08146.pdf"><b>pdf</b></a> | <a href="https://arxiv.org/abs/1706.08146"><b>arXiv</b></a> | <a href="https://github.com/kaishengtai/compressed-factorization"><b>code</b></a> | <a data-toggle="collapse" href="#video3"><b>spotlight video</b></a>
-                    </div>
-                    </p></li>
-                
-                <div class="collapse space justify" id="collapseExample3">
-                    What learning algorithms can be run directly on compressively-sensed data? If we compress a high dimensional matrix via a random projection, then what is the relationship between the factors of the original matrix and the factors of the compressed matrix? While it is well-known that random projections preserve a number of geometric properties of a dataset, this work shows that random projections can also preserve certain solutions to non-convex, NP-Hard problems like non-negative matrix factorization---both in theory and in practice.<br><br>
-                </div>
-                
-                <div class="collapse space justify" id="video3">
-                    Jump to 53:20 in this <a href="https://slideslive.com/38917770/optimization">video</a>.<br>
-                </div>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">Efficient Anomaly Detection via Matrix Sketching</div>
-                    <div style="margin-left: 15px;">
-                        Vatsal Sharan, Parikshit Gopalan, Udi Wieder</i><br>
-                    <i>NeurIPS, 2018</i><br>
-                    <a data-toggle="collapse" href="#collapseExample6"><b>abstract</b></a> | <a href="https://arxiv.org/pdf/1804.03065.pdf"><b>pdf</b></a> | <a href="https://arxiv.org/abs/1804.03065"><b>arXiv</b></a>
-                    </div>
-                    </p></li>
-                
-                <div class="collapse space justify" id="collapseExample6">
-                    PCA based anomaly scores are commonly used for finding anomalies in high-dimensional data. The naive algorithms for computing these scores explicitly compute the PCA of the covariance matrix which uses space quadratic in the dimensionality of the data. Using matrix sketching tools and new matrix perturbation inequalities, we give the first streaming algorithms for computing these scores that use space that is linear or sublinear in the dimension.<br><br>
-                </div>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">Moment-Based Quantile Sketches for Efficient High Cardinality Aggregation Queries</div>
-                    <div style="margin-left: 15px;">
-                        Edward Gan, Jialin Ding, Kai Sheng Tai, Vatsal Sharan, Peter Bailis</i><br>
-                    <i>VLDB, 2018</i><br>
-                    <a data-toggle="collapse" href="#collapseExample8"><b>abstract</b></a> | <a href="https://arxiv.org/pdf/1803.01969.pdf"><b>pdf</b></a> | <a href="https://arxiv.org/abs/1803.01969"><b>arXiv</b></a> | <a href="https://github.com/stanford-futuredata/msketch"><b>code</b></a>
-                    </div>
-                    </p></li>
-                
-                <div class="collapse space justify" id="collapseExample8">
-                    We propose a compact and efficiently mergeable sketch for answering quantile queries on a dataset. This data structure, which we refer to as the moments sketch, operates with a small memory footprint (200 bytes) and achieves computationally efficient (50ns) merges by tracking only a set of summary statistics, notably the sample moments.<br><br>
-                </div>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">Prediction with a Short Memory</div>
-                    <div style="margin-left: 15px;">
-                        Vatsal Sharan, Sham Kakade, Percy Liang, Gregory Valiant</i><br>
-                    <i>STOC, 2018</i><br>
-                    <a data-toggle="collapse" href="#collapseExample9"><b>abstract</b></a> | <a href="https://arxiv.org/pdf/1612.02526.pdf"><b>pdf</b></a> | <a href="https://arxiv.org/abs/1612.02526"><b>arXiv</b></a> | <a href="https://theorydish.blog/2017/11/29/prediction-with-a-short-memory/"><b>blog</b></a> | <a href="https://www.youtube.com/watch?v=-Lhmr9vqjrE&t=5s"><b>video</b></a>
-                    </div>
-                    </p></li>
-                
-                <div class="collapse space justify" id="collapseExample9">
-                    When is it necessary to remember significant information from the distant past to make good predictions about the future in sequential prediction tasks? How do we consolidate and reference memories about the past in order to predict the future? This work studies these questions, and the findings are perhaps counterintuitive: we show that a simple (Markov) model which bases its predictions on only the most recent observations and the statistics of short windows, can  achieve small error on average with respect to a large class of sequences, such as those generated by Hidden Markov Models (HMMs). This shows that long-term memory may not be necessary for making good predictions on average, even on sequences generated by complex processes that have long-range dependencies.<br><br>
-                </div>
-                
-                <li><p><div style="font-size:15px;font-weight:bold">Sketching Linear Classifiers over Data Streams</div>
-                    <div style="margin-left: 15px;">
-                        Kai Sheng Tai, Vatsal Sharan, Peter Bailis, Gregory Valiant</i><br>
-                    <i>SIGMOD, 2018</i><br>
-                    <a data-toggle="collapse" href="#collapseExample10"><b>abstract</b></a> | <a href="https://arxiv.org/pdf/1711.02305.pdf"><b>pdf</b></a> | <a href="https://arxiv.org/abs/1711.02305"><b>arXiv</b></a> | <a href="https://github.com/stanford-futuredata/wmsketch"><b>code</b></a>
-                    </div>
-                    </p></li>
-                
-                <div class="collapse space justify" id="collapseExample10">
-                    We introduce a new sub-linear space sketch---the Weight-Median Sketch---for learning compressed linear classifiers over data streams while supporting the efficient recovery of large-magnitude weights in the classifier. The Weight-Median Sketch adopts the core data structure used in the Count-Sketch, but, instead of sketching counts, it captures sketched gradient updates to the model parameters. We establishes recovery guarantees for our sketch and demonstrate empirical improvements in memory-accuracy trade-offs over alternative memory-budgeted methods. <br><br>
-                </div>
-                
-                </ul>
-            
-        </div>
-        
-        <div style="height: 12px;"></div>
-        
-        <h4>
-            <em>Learning with limited (or synthetic) data</em>
-          </h4>
-        
-        <div style="height: 8px;"></div>
-        
-        Modern ML techniques are data-hungry, but data is an expensive resource. Current ML applications have brought to light several interesting information-theoretic questions around learning with limited data. Some of my work provides a formulation to study the basic statistical task of synthetically augmenting a given set of samples, and explores notions of regularization --- a classical technique for data-efficient learning whose role still remains mysterious in deep learning.
-        
-        <ul>
+<h3 style="color:#1F618D;">Prerequisites</h3>
 
-        <li><p><div style="font-size:15px;font-weight:bold;">
-                  Proper Learnability and the Role of Unlabeled Data
-            </div>
-                <div style="margin-left: 15px;">
-                Julian Asilis, Siddartha Devic, Shaddin Dughmi, Vatsal Sharan, Shang-Hua Teng
-            <br>
-            <i>ALT, 2025</i><br>
-            <a href="https://arxiv.org/abs/2502.10359"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2502.10359"><b>pdf</b></a>
-                </div> </p></li>
-            
-            <li><p><div style="font-size:15px;font-weight:bold;">
-                  Regularization and Optimal Multiclass Learning
-            </div>
-                <div style="margin-left: 15px;">
-                Julian Asilis, Siddartha Devic, Shaddin Dughmi, Vatsal Sharan, Shang-Hua Teng
-            <br>
-            <i>COLT, 2024</i><br>
-            <a href="https://arxiv.org/abs/2309.13692"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2309.13692.pdf"><b>pdf</b></a>
-                </div> </p></li>
-            
-            <li><p><div style="font-size:15px;font-weight:bold">On the Statistical Complexity of Sample Amplification
-            </div>
-                <div style="margin-left: 15px;">
-            Brian Axelrod, Shivam Garg, Yanjun Han, Vatsal Sharan, Gregory Valiant
-            <br>
-            <i>Annals of Statistics, 2024</i><br>
-            <a href="https://arxiv.org/abs/2201.04315"><b>arXiv</b></a> | <a href="https://vatsalsharan.github.io/annals_sample_amplification.pdf"><b>preprint pdf</b></a>
-                </div>
-            </p></li>
-            
-        </ul>
-        
-        <a data-toggle="collapse" href="#collapseData"><b>Some more work along these lines</b></a>
-        
-        <div class="collapse space justify" id="collapseData">
-            
-            <ul>
-                
-               
+Familiarity with probability, linear algebra, calculus, analysis of algorithms, basic understanding of machine learning. Python programming knowledge will be helpful.
 
-               <li><p><div style="font-size:15px;font-weight:bold;">
-                   Transductive Sample Complexities Are Compact
-               </div>
-                   <div style="margin-left: 15px;">
-                   Julian Asilis, Siddartha Devic, Shaddin Dughmi, Vatsal Sharan, Shang-Hua Teng
+           
+<h3 style="color:#1F618D;">Syllabus and Materials</h3>
 
-               <br>
-               <i>Neurips, 2024</i><br>
-               <a href="https://arxiv.org/abs/2402.10360"><b>arXiv</b></a> | <a href="https://arxiv.org/pdf/2402.10360"><b>pdf</b></a>
-                   </div>
-               </p></li>
-               
-               <li><p><div style="font-size:15px;font-weight:bold;">
-                   Open Problem: Can Local Regularization Learn All Multiclass Problems?
-               </div>
-                   <div style="margin-left: 15px;">
-                   Julian Asilis, Siddartha Devic, Shaddin Dughmi, Vatsal Sharan, Shang-Hua Teng
-               <br>
-               <i>Open Problem @ COLT, 2024</i><br>
-                <a href="https://jasilis.com/documents/papers/open-problem-local-regularization.pdf"><b>pdf</b></a>
-                   </div></p></li>
-               
-               <li><p><div style="font-size:15px;font-weight:bold">Sample Amplification: Increasing Dataset Size even when Learning is Impossible</div>
-                   <div style="margin-left: 15px;">
-                       Brian Axelrod, Shivam Garg, Vatsal Sharan, Gregory Valiant<br>
-                <i>ICML, 2020 </i><br>
-                <a data-toggle="collapse" href="#collapseExample_sample"><b>abstract</b></a> | <a href="https://arxiv.org/pdf/1904.12053.pdf"><b>pdf</b></a> | <a href="https://arxiv.org/abs/1904.12053"><b>arXiv</b></a> | <a data-toggle="collapse" href="#video2"><b>video</b></a>
-                   </div>
-                </p></li>
+The following is a tentative schedule. We will post lecture notes and assignments here. Additional related reading for all lectures will be posted on ed discussion after the lecture.
+<br><br>
+<div id="table-custom">
+    <table style="width:100%" align="right">
+        <tr>
+            <th style="text-align:center; width:8%;">Lecture</th>
+            <th style="text-align:center">Topics</th>
+            <th style="text-align:center">Lecture notes</th>
+            <th style="text-align:center; width:11%;">Homework</th>
+        </tr>
+<tr>
+  <td align="center">1, 08/21</td>
+  <td align="left">Introduction, PAC learning, finite hypothesis classes, bias-complexity tradeoff </td>
+  <td align="center">
+        <a href="/fall23/lec1.pdf">Lecture 1 notes</a>
+  </td>
+  <td align="center"></td>
+</tr>
 
-                <div class="collapse space justify" id="collapseExample_sample">
-                  <i>Is learning a distribution always necessary for generating new samples from the distribution?</i> We introduce the problem of "sample amplification": given <i>n</i> independent draws from a distribution, <i>D</i> , to what extent is it possible to output a set of <i>m > n </i>  datapoints that are indistinguishable from <i>m</i>  i.i.d. draws from <i>D</i> ? Curiously, we show that nontrivial amplification is often possible in the regime where <i>n</i>  is too small to learn <i>D</i>  to any nontrivial accuracy.<br><br>
-               </div>
-               
-               <div class="collapse space justify" id="video2">
-                   Jump to 50:00 (or topic #27) in this <a href="https://slideslive.com/38922033/machine-learning-with-guarantees-1">video</a>.<br>
-               </div>
-                
-                </ul>
-            
-        </div>
-            
-            
-            <div style="height: 12px;"></div>
+<tr>
+  <td align="center">2, 08/28</td>
+  <td align="left">Agnostic PAC learning, uniform convergence, concentration inequalities, sub-Gaussian random variables, VC dimension
+  <td align="center">
+      <a href="/fall23/lec2.pdf">Lecture 2 notes</a>
+  </td>
+  <td align="center">
+      <a href="/fall23/hw1.pdf">HW1</a>
+  </td>
+</tr>
+<tr>
+  <td align="center">3, 09/11</td>
+  <td align="left"> VC theorem, Rademacher complexity, generalization bounds using Rademacher complexity
+  <td align="center">
+      <a href="/fall23/lec3.pdf">Lecture 3 notes</a>
+  </td>
+  <td align="center">
+      <!-- <a href="/lecture_notes/hw1.pdf">HW1</a></td>-->
+</tr>
 
-	  </section>
-      
-      <section id="students">
-        <h3>Students</h3>
+<tr>
+  <td align="center">4, 09/18</td>
+  <td align="left"> Properties of Rademacher complexity, linear hypothesis classes, regularization and structural risk minimization, stability and generalization
+  <td align="center">
+      <a href="/fall23/lec4.pdf">Lecture 4 notes</a>
+  </td>
+  <td align="center"></td>
+</tr>
 
-        I am very lucky to advise an <a href="docs/group_photo_2025.jpg">amazing group of students,</a> including the following amazing Ph.D. students:<br><br>
+<tr>
+  <td align="center">5, 09/25</td>
+  <td align="left"> Computational complexity of learning, learning conjunctions efficiently, intractability of learning 3-term DNF, proper vs. improper learning, hardness of improper learning using cryptographic assumptions, hardness of agnostically learning halfspaces
+  <td align="center">
+      <a href="/fall23/lec5.pdf">Lecture 5 notes</a>
+  </td>
+  <td align="center"></td>
+</tr>
 
-        <ul>
+<tr>
+  <td align="center">6, 10/02</td>
+  <td align="left">Learning with random classification noise (RCN), SQ learning, SQ learning implies learning with RCN, SQ dimension
+  <td align="center">
+      <a href="/fall23/lec6.pdf">Lecture 6 notes</a>
+  </td>
+  <td align="center">
+      <a href="/fall23/hw2.pdf">HW2</a>
+  </td>
+</tr>
+<tr>
+  <td align="center">7, 10/09</td>
+  <td align="left">Learning parities, Boolean function analysis, hardness of learning parities in SQ, Computational-statistical tradeoffs and the planted clique conjecture, memory-sample tradeoffs for learning
+      <td align="center">
+          <a href="/fall23/lec7.pdf">Lecture 7 notes</a>
+      </td>
+      <td align="center"></td>
+    </tr>
 
-        <li> <a href="https://sid.devic.us/"><b>Siddartha Devic</b></a> (co-advised with <a href="https://www.korolova.com/"><b>Aleksandra Korolova</b>) </li>
-        <li> <a href="https://estija.github.io/"><b>Bhavya Vasudeva</b></a> </li>
-        <li> <a href="http://www.jasilis.com/"><b>Julian Asilis</b></a> </li>
-        <li> <a href="https://sites.google.com/usc.edu/deqingfu"><b>Deqing Fu</b></a> (co-advised with <a href="https://robinjia.github.io/"><b>Robin Jia</b></a>) </li>
-        <li> Devansh Gupta</b></a> (co-advised with <a href="https://sites.usc.edu/razaviyayn/"><b>Meisam Razaviyayn</b></a>) </li>
-        <li> Spandan Senapati</b></a> (co-advised with <a href="https://haipeng-luo.net/index.html"><b>Haipeng Luo</b></a>) </li>
-        <li> <a href="https://kevinzhoutianyi.github.io/"><b>Tianyi Zhou </b></a> (co-advised with <a href="https://robinjia.github.io/"><b>Robin Jia</b></a>)  </li>
 
-        </ul>
-        <div style="height: 8px;"></div>
-        
-        And the following amazing undergrad/Masters students:<br><br>
-        
-        <ul>
+  <td align="center">8, 10/16</td>
+  <td align="left">Convex optimization, convex learning problems and convex surrogates, gradient descent (GD), convergence of GD, variants and properties of GD, SGD and its convergence, learning with SGD
+  <td align="center">
+      <a href="/fall23/lec8.pdf">Lecture 8 notes</a>
+  </td>
+  <td align="center"></td>
+</tr>
 
-        <li>    Dutch Hansen </li>
-        <li>    Anish Jayant </li>
-         <li>   Jung Whan Lee </li>
-         <li>   You Qi Huang (SURE program intern in Summer'23, mentored by Bhavya Vasudeva) </li>
-         <li>   Natalie Abreu (graduated in Fall'23, now Ph.D. student at Harvard) </li>
-         <li>   Aditya Prased (graduated in Fall'24, now Ph.D. student at the University of Chicago) </li>
-         <li>   Kameron Shahabi (graduated in Fall'24, now Ph.D. student at the University of Washington) </li>
-         <li>   Qilin Ye (joint with Robin Jia, graduated in Fall'24, now M.S. student at Duke) </li>
-         <li>   Devin Martin (SURE program intern in Summer'22, mentored by Bhavya Vasudeva) </li>
+<tr>
+  <td align="center">9, 10/23</td>
+  <td align="left">Boosting and AdaBoost, kernel methods
+  <td align="center">
+      <a href="/fall23/lec9.pdf">Lecture 9 notes</a>
+  </td>
+  <td align="center"></td>
+</tr>
 
-        </ul>
-      
-      <section id="teaching">
-      <h3>Teaching</h3><br>
-      
-      <ul>
-          <li> <a href="https://vatsalsharan.github.io/spring24.html">CSCI 567: Machine Learning (Spring 2024) </a>
-          <li> <a href="https://vatsalsharan.github.io/fall23.html">CSCI 699: Theory of Machine Learning (Fall 2023) </a>
-          <li> CSCI 699: Seminar on Computational Perspectives on the Frontiers of ML (Spring 2023)
-          <li> <a href="https://vatsalsharan.github.io/fall22.html">CSCI 567: Machine Learning (Fall 2022) </a>
-          <li> <a href="https://vatsalsharan.github.io/fall21.html">CSCI 699: Theory of Machine Learning (Fall 2021) </a>
-	 </ul>
+<tr>
+  <td align="center">10, 10/30</td>
+  <td align="left">Online learning, mistake bound model, Littlestone dimension, online learning in the unrealizable case, Weighted Majority algorithm, Online convex optimization
+      <td align="center">
+          <a href="/fall23/lec10.pdf">Lecture 10 notes</a>
+      </td>
+      <td align="center"><a href="/fall23/hw3.pdf">HW3 (theory)</a>
+    </tr>
+
+<tr>
+  <td align="center">11, 11/06</td>
+  <td align="left">Non-convex optimization, challenges of understanding deep learning, depth-size tradeoffs, optimization landscape for deep learning, algorithmic regularization, benign overfitting
+  <td align="center">
+   
+  </td>
+  <td align="center"><a href="/fall23/hw3_empirical.pdf">HW3 (empirical)</a>
+  </td>
+</tr>
+<tr>
+  <td align="center">12, 11/13</td>
+  <td align="left">Algorithmic explorations. See presentation schedule <a href="/project23.html">here</a>.
+  <td align="center"></td>
+  <td align="center"></td>
+</tr>
+
+<tr>
+  <td align="center">13, 11/20</td>
+  <td align="left">Algorithmic explorations. See presentation schedule <a href="/project23.html">here</a>.
+  <td align="center"></td>
+  <td align="center"></td>
+</tr>
+
+<tr>
+  <td align="center">14, 11/27</td>
+  <td align="left">Algorithmic explorations.  See presentation schedule  <a href="/project23.html">here</a>.
+  <td align="center"></td>
+  <td align="center"></td>
+</tr>
+</table>
+</div>
      
-     <br><br><br>
-     
-	</div>
-      </div>
-    </div>
-  
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<div><h3 style="color:#1F618D;">Requirements and Grading</h3></div>
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+<ol>
     
-  </body>
+    <li>  <b> 3-4 homeworks </b> worth 40% of the grade. Discussion is allowed and encouraged but everyone should write solutions on their own. Homeworks should be written in Latex and submitted via Gradescope.
+        
+        <li> The major component will be a <b> course presentation </b> (30%) and <b> course project </b> (25%). An overview of the requirements is given below, detailed instructions will be discussed later. The course presentation and project will be in <b>groups of two students. </b>
+            
+            <ul> <li> The class presentation is one of the most important components of the course, and will involve explore various algorithmic and foundational aspects of machine learning that we do not get to investigate in sufficient depth in class. For the project, you will be matched to a conceptual question about ML based on your interest. The question could involve further studying some algorithm we saw in class, studying some new algorithm, investigating aspects of ML we did not get to explore (such as robustness, fairness, privacy), investigating phenomenon in deep learning, exploring and understanding datasets or the performance of ML algorithms on these datasets, etc. You will also be expected to provide some independent insight about your topic of study. This could either come from your own empirical analysis  or theoretical investigation. You will give a presentation of about 30 minutes based on your work. To help ensure that all presentations are of high quality, presenters will be asked to go over their slides and review their preparation with the course staff about a week before the presentation (this will be worth 10%, the actual in-class presentation will be worth 20%).
+                 <li> The project project will be 8-9 pages. You have two options for it: (1) You can continue investigating the topic of your presentation, and write a report on the research you did. (2) You can write a report surveying 2-3 papers.
+                     </ul>
+            <li> 5% of the grade will be based on <b> course attendance and participation</b>.
+</ol>
+
+<h3 style="color:#1F618D;">Resources and related courses</h3>
+
+<ol>
+    
+    <li>  There is no required textbook for this class, but the following books are good supplemental reading for many parts.
+        <ul>
+            
+            <li> Understanding Machine Learning:
+                From Theory to Algorithms, by Shai Shalev-Shwartz and Shai Ben-David. Availble online <a href="https://www.cs.huji.ac.il/~shais/UnderstandingMachineLearning/understanding-machine-learning-theory-algorithms.pdf">here</a>.
+                
+                <li> An Introduction to Computational Learning Theory, by Michael J. Kearns and Umesh Vazirani. Available using your USC account
+                    <a href="https://uosc.primo.exlibrisgroup.com/discovery/fulldisplay?docid=cdi_proquest_ebookcentral_EBC5966119&context=PC&vid=01USC_INST:01USC&lang=en&search_scope=MyInst_and_CI&adaptor=Primo%20Central&tab=Everything&mode=Basic">here</a>.
+                    
+           </ul>
+        
+        <li> This course draws heavily from several other related courses, and the material there could be a good reference. Here are some pointers (there are also many other excellent courses missing in this short list):
+            
+            <ul>
+             
+             <li> Haipeng Luo's class at USC. <a href="https://haipeng-luo.net/courses/CSCI699_2019/index.html">[website]</a>
+                 
+                 <li> Akshay Krishnamurthy's class at UMass.
+                     <a href="https://people.cs.umass.edu/~akshay/courses/cs690m/index.html">[website]</a>
+                     <li> Tengyu Ma's and Percy Liang's class at Stanford.
+                     <a href="http://web.stanford.edu/class/stats214/">[Tengyu's course website]</a> <a href="https://web.stanford.edu/class/cs229t/2017/Lectures/percy-notes.pdf">[Percy's lecture notes]</a>
+                     
+                     <li> Rocco Servedio's class at Columbia.
+                     <a href="http://www.cs.columbia.edu/~cs4252/">[website]</a>
+                     
+                     <li> Varun Kanade's class at Oxford.
+                     <a href="http://www.cs.ox.ac.uk/people/varun.kanade/teaching/CLT-HT-TT2021/">[website]</a>
+                     
+                     <li> Avrim Blum's class at TTIC. <a href="https://home.ttic.edu/~avrim/MLT20/">[website]</a>
+                     
+                     <li> Matus Telgarsky's class at UIUC.
+                     <a href="https://mjt.cs.illinois.edu/courses/mlt-f18/">[website]</a>
+                     
+                     
+                     
+                     
+            </ul>
+            
+         </ol>
+     
+      <br><br><br>
+     
+</div>
+</div>
+</body>
 </html>
+
